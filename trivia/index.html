@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            window.onload = function() {
+            let buttons = document.querySelectorAll('input[type="button"]');
+            let messageContainer = document.getElementById('message-container');
+            let messageDiv = null;
+            buttons.forEach(button => {button.addEventListener('click', function()
+        {
+            if (messageDiv) {messageDiv.remove();}
+            if (button.classList.contains('correct'))
+                {
+                    button.style.backgroundColor = 'green';
+                    messageDiv = document.createElement('div');
+                    messageDiv.textContent = 'Correct!';
+                }
+            else
+                {
+                    button.style.backgroundColor = 'red';
+                    messageDiv = document.createElement('div');
+                    messageDiv.textContent = 'Incorrect!';
+                }
+                messageContainer.appendChild(messageDiv);
+                setTimeout(() => {
+                    button.style.backgroundColor = '#d9edff';
+                    if (messageDiv) {
+                        messageDiv.remove();
+                        messageDiv = null;
+                    }
+                }, 2000)
+        });
+    });
+    let freetext = document.querySelector('input[type="text"]');
+    let submit = document.querySelector('input[type="submit"]');
+    let messageContainer2 = document.getElementById('message-container2');
+    let messageDiv2 = null;
+    submit.addEventListener('click', function()
+        {
+            if (messageDiv2)
+            {
+                messageDiv2.remove();
+                messageDiv2 = null;
+            }
+            if (freetext.value == 'Salzburg')
+            {
+                freetext.style.backgroundColor = 'green';
+                messageDiv2 = document.createElement('div');
+                messageDiv2.textContent = 'Correct!';
+            }
+            else
+            {
+                freetext.style.backgroundColor = 'red';
+                messageDiv2 = document.createElement('div');
+                messageDiv2.textContent = 'Incorrect';
+            }
+            messageContainer2.appendChild(messageDiv2);
+
+        })
+};
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <p>
+                    <h3>What is the capital of Hungary?</h3>
+                </p>
+                <input type = "button"  class = "correct" name = "capital" value = "Budapest">
+                <input type = "button"  class = "incorrect" name = "capital" value = "Vienna">
+                <input type = "button"  class = "incorrect" name = "capital" value = "Bucharest">
+                <div id="message-container"></div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <p>
+                    <h3>Which city was Mozart born in?</h3>
+                </p>
+                <input type = "text" name = "birthplace"> <input type = "submit" name = "submit" value = "Submit">
+                <div id = "message-container2"></div>
+            </div>
+        </div>
+    </body>
+</html>

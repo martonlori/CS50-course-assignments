@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Overview
+{% endblock %}
+
+{% block main%}
+
+<div class = "mb-3" id = "portfolio">
+    {% for stock in portfolio %}
+    <p>
+        Symbol : {{stock.Symbol}}
+        Shares held: {{stock.Shares}}
+        Value: {{stock.Value | usd}}
+        Total: {{stock.Total | usd}}
+    </p>
+    {% endfor %}
+    <p>
+        Cash: {{cash | usd}}
+        Overall account value: {{ overall | usd}}
+    </p>
+    <p>
+        <form action = "/add_cash" method = "POST">
+            <input type="text" autofocus = "off" autocomplete = "off" placeholder = "Cash amount to add" name = "add_cash"required>
+            <button type = "submit" name = "add_cash_button" id = "add_cash_button"> Add cash</button>
+        </form>
+
+    </p>
+</div>
+
+{% endblock %}

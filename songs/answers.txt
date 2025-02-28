@@ -1,0 +1,2 @@
+Maybe the aura is calculated somehow like the average of the given factors? Maybe, the factors weigh different.
+

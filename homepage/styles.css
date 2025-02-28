@@ -1,0 +1,95 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  footer p {
+    margin-bottom: .25rem;
+  }
+
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.cover-img {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+
+.contain-img {
+  width: 100%;
+  height: 200px;
+  object-fit:contain;
+}
+
+.spacing {
+  margin-bottom: 40px;
+}
+
+.underoff{
+  text-decoration: none;
+}
+
+.underoff:hover {
+  text-decoration: underline;
+}
+.custom-bg {
+  background-image: url('https://www.classcentral.com/report/wp-content/uploads/2022/05/cs50-2023-banner-e1673610020393.png');
+  background-size: cover;
+  background-position: center;
+}
+.custom-bg::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+z-index: 1;
+}
+
+.custom-bg > * {
+position: relative;
+z-index: 2;
+}
+
+.custom-bg1 {
+  background-image: url('https://i.ytimg.com/vi/ciz2UaifaNM/maxresdefault.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-bg2 {
+  background-image: url('https://www.classcentral.com/report/wp-content/uploads/2022/05/cs50-2023-banner-e1673610020393.png');
+  background-size: cover;
+  background-position: center;
+}

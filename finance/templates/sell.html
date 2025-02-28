@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title%}
+    Sell
+{% endblock %}
+
+{% block main %}
+
+<form action = "/sell" method = "POST">
+    <div class = "mb-3">
+        <select class = "form-control mx-auto w-auto" name = "symbol" id = "symbol_dropdown" type = "text">
+            {% for stock in symbol_dropdown %}
+                <option value= "{{stock['stock']}}" > {{ stock['stock'] }}</option>
+            {% endfor %}
+        </select>
+        <input autocomplete = "off" autofocus = "off" class = "form-control mx-auto w-auto" name = "shares" placeholder = "Number of shares" type = "number" min = "1" required>
+        <button type = "submit" name = "sellSubmit" class = "btn btn-primary"> Sell</button>
+    </div>
+</form>
+
+{% endblock %}

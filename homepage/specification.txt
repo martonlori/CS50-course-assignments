@@ -1,0 +1,3 @@
+10 HTML tags used: <p>, <div>,<main>, <footer>, <header>,<script>, <a>, <input>, <svg>, <meta>
+5 CSS properties used: width, height, margin-top, margin-bottom, margin-right, margin-left, background-color, font-size, text-decoration, background-size, background-image.
+Hod did I use JavaScript and Bootstrap: I used JavaScript to say hi to the client with a waving mario gift. Also used Bootstrap to create the looks and design of the pages.

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock infromation
+{% endblock %}
+
+{% block main %}
+<div class = "mb-3" id = "stock-info">
+    <p>Stock price: {{ stock.price | usd}}</p>
+    <p> Stock symbol: {{ stock.symbol }}</p>
+</div>
+
+{% endblock %}

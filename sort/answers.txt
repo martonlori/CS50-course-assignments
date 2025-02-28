@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: Random50000: 5.8s, Random10000 0.211s Random5000 0.065s, Reversed50000: 5.141s, Sorted50000: 0.553s. We can see it uses Bubble sort, because the best case scenario is a fragment of the worst case scenario.
+
+sort2 uses: Merge sort
+
+How do you know?: Random50000: 0.64s, Random10000: 0.1s, Random5000: 0.03s, Reversed50000: 0.541s, Sorted50000: 0.539s. Because based on the time it takes up on the biggest datas worst scenario, we can see, that it is the fastest by far.
+
+sort3 uses: Selection sort
+
+How do you know?: Random50000:2.574s, Random10000: 0.140s, Random5000: 0.065s, Reversed50000: 2.804s, sorted50000: 2.389s. We can see, that comparing to Bubble sort, it is faster, regarding the worst case scenario, but way slower, regarding the best case scenario. We can also see, that there is no huge difference in this sort between the best and worst case scenario.
