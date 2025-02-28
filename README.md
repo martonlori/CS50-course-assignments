@@ -9,6 +9,7 @@ Key topics include:
 - **C Programming:** Advanced memory management, pointer arithmetic, and efficient data structures like linked lists, hash tables, and binary search trees.
 - **Algorithms and Data Structures:** A range of efficient sorting algorithms (e.g., merge sort, quick sort), recursion, and performance analysis.
 - **Web Development:** Developing responsive web pages and applications using HTML, CSS, and JavaScript, culminating in a fully functional web project.
+- **Databases and SQL:** Storing, querying, and manipulating data using SQL. Understanding how to normalize databases, write complex queries, and integrate SQL with application code.
 - **Computer Science Foundations:** Binary representation, cryptography techniques, and detailed exploration of how computers execute code at the hardware level.
 
 Each module includes in-depth lectures, hands-on labs, and rigorous problem sets that challenge participants to apply theoretical concepts in practical, real-world scenarios. The final project allows for the design and implementation of a sophisticated software solution.
@@ -18,6 +19,7 @@ Each module includes in-depth lectures, hands-on labs, and rigorous problem sets
 - **Python Programming:** Variables, loops, control structures, and functions.
 - **Data Structures and Collections:** Strings, lists, dictionaries, sets, and tuples.
 - **File Handling and Exceptions:** Efficient file processing and robust error handling strategies.
+- **Databases and SQL:** Leveraging SQLite to create and query databases, integrate structured data into Python applications, and perform advanced data manipulations.
 - **Libraries and Modules:** Leveraging Python’s standard library and external packages for sophisticated tasks.
 - **Object-Oriented Programming (OOP):** Designing maintainable code through classes, objects, inheritance, and encapsulation.
 - **APIs and Data Parsing:** Interacting with RESTful APIs, extracting and analyzing JSON data, and working with more complex data structures.
